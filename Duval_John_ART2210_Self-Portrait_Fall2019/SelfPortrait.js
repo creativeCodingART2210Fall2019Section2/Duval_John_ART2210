@@ -12,7 +12,12 @@
     var xspeed;
     var yspeed;
 
-    let fr = 10;
+    var linex = 0;
+    var liney = 0;
+    var linexspeed = .5;
+    var lineyspeed = .5;
+
+    let fr = 5;
     let sec;
     
     
@@ -47,8 +52,14 @@ function draw() {
 
    displayBall(150,150);
    displayBall(1200,300);
+   
+    rectPlay();
 
-
+    push();
+    stroke(200);
+    linePlay();
+    pop();
+   
 /*
     fill(255,0,0);  
     beginShape(TRIANGLE_FAN);
@@ -711,7 +722,6 @@ endShape();
 
 
 
-
 }
 
 
@@ -734,7 +744,7 @@ function branch(len) {
 function displayBall(x, y) {
     stroke(0);
     fill(random(0,255,), random(0,255), random(0,255));
-    ellipse(x, y, random(50,250), random(50,250));
+    ellipse(x, y, random(50,175), random(50,175));
 
 }
 
@@ -848,7 +858,14 @@ pop(noStroke());
 
 }
 
+function rectPlay() {
+    push();
+    rect(1650, 600, random(25,150), random(25,150));
+    pop();
 
+    
+    rect(110, 450, random(0,40), random(0,40));
+}
 
 function closeEyes() {
     var sec = second();
@@ -856,6 +873,32 @@ function closeEyes() {
     else fill(255);
 }
 
+function linePlay() {
+    for (var i = 0; i < 2200; i +=8) {
+        
+        push();
+        stroke(0,random(35,135), random(100,255));
+        line(100, i/2, 100, i * 2);
+        rotate(angle/2);
+        pop();
+
+
+
+        rotate(angle);
+        push();
+        stroke(random(0,255), 0, random(100,200));
+        strokeWeight(3);
+        line(i, 650, i + 60, 550);
+        pop();
+
+    }
+    
+}
+
+function moveLine() {
+    linex = linex + linexspeed;
+    liney = liney + lineyspeed;
+}
 
 function windowResized() {
     resizeCanvas(windowWidth,windowHeight);
