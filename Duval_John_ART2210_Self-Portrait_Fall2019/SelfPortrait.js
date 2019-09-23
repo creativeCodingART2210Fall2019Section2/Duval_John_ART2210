@@ -1,4 +1,5 @@
 
+   
     var growx1 = 30;
     var growy1 = 75;
     var growx2 = 58;
@@ -72,12 +73,9 @@ function draw() {
     endShape();
   
     
-
     fill(241, 194, 125);
     ellipse(windowWidth/2,400,grow,600);
-
     if(grow <=400) grow = grow + 1;
-
       
     move = move + 1;
   
@@ -90,10 +88,17 @@ rect(400, 270, 150, 350, 80, 90, 80, 80);
    var scaleit = scale(1.5);
   scaleit = scaleit + 1;
   rect(400, 270, 150, 350, 80, 90, 80, 80);
-
 }
-
 */
+
+//SHIRT PIECE
+beginShape();
+fill('#513B56');
+vertex(697.587, 917.154);
+vertex(771.666, 901.33);
+vertex(781.972, 966.021);
+vertex(701.501, 974.947);
+endShape();
 
 //SHIRT LEFT
 stroke('#E8A494');
@@ -146,7 +151,8 @@ endShape(CLOSE);
 
 
 //HAIR
-fill('#CFBa87');
+push();
+fill(random(188,194), random(168, 172), random(112, 117));
 beginShape();
 vertex(467.39, 547.071);
 vertex(446.52, 477.877);
@@ -167,6 +173,7 @@ vertex(721.336, 368.119);
 vertex(470.783, 402.558);
 vertex(467.39, 547.071);
 endShape();
+pop();
 
 //HAIR SHADOW RIGHT
 
@@ -246,7 +253,8 @@ endShape(CLOSE);
 
 
 //  FACE BASE
-fill('#FFB4A2');  
+push();
+fill(random(244,253), random(177, 182), random (158, 175));  
 beginShape();
 vertex(447.259, 463.423);
 vertex(449.73, 472.627);
@@ -289,6 +297,7 @@ vertex(436.956, 516.803);
 vertex(431.482, 481.83);
 vertex(440.606, 466.184);
 endShape(CLOSE);
+pop();
 
 //SHADOW FOREHEAD
 fill('#E8A494');
@@ -459,7 +468,6 @@ vertex(560.627, 468.191);
 vertex(538.343, 475.709);
 vertex(517.674, 481.112);
 endShape(CLOSE);
-
 //RIGHT EYE
 fill('#F5F5F5');
 beginShape();
@@ -472,7 +480,6 @@ vertex(685.287, 440.096);
 vertex(674.953, 444.618);
 vertex(662.681, 446.232);
 endShape(CLOSE);
-
 //EYEBALL LEFT
 fill('#468EB3');
 beginShape();
@@ -488,7 +495,6 @@ vertex(519.637, 479.618);
 vertex(515.766, 475.709);
 vertex(512.422, 471.171);
 endShape(CLOSE);
-
 //EYEBALL RIGHT
 fill('#468EB3');
 beginShape();
@@ -502,17 +508,14 @@ vertex(667.492, 445.599);
 vertex(660.766, 439.321);
 vertex(658.69, 432.81);
 endShape(CLOSE);
-
 //IRIS LEFT
 push(noStroke());
 fill('#000000');
 ellipse(528.263, 466.361, 10, 10);
-
 //IRIS RIGHT
 fill('#000000');
 ellipse(674.139, 432.316, 10, 10);
 pop(noStroke());
-
 */
 
 //NOSE SHADING
@@ -623,7 +626,8 @@ endShape(CLOSE);
 
 
 //STACHE :)
-fill('#C0AA73');
+push();
+fill(random(188,194), random(168, 172), random(112, 117));
 beginShape();
 vertex(564.696, 565.819);
 vertex(606.264, 569.327);
@@ -646,7 +650,7 @@ vertex(518.155, 644.884);
 vertex(518.155, 616.675);
 vertex(522.439, 599.032);
 endShape(CLOSE);
-
+pop();
 
 
 //TEETH TOP
