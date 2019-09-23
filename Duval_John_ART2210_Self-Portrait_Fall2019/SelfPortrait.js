@@ -17,7 +17,7 @@
     var linexspeed = .5;
     var lineyspeed = .5;
 
-    let fr = 5;
+    let fr = 5.5;
     let sec;
     
     
@@ -37,7 +37,7 @@ function setup() {
 
 
 function draw() {
-    background('#285180');
+    background(40, random(80,90), 128);
     angle = slider.value();
     push();
     stroke(255);
