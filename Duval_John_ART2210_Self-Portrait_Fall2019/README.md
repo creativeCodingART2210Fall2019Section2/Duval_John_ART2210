@@ -14,8 +14,8 @@ For the coding, I was able to set variables inside of functions and call those f
 
 ## *Kandinsky*
 
-![](https://github.com/creativeCodingART2210Fall2019Section2/Duval_John_ART2210/raw/master/Duval_John_ART2210_Self-Portrait_Fall2019/Kandinsky.png)
+![](https://github.com/jduval7/Duval_John_ART2210/raw/master/Image/Kandinsky.png)
 
 ## *Van Gogh*
 
-![](https://github.com/creativeCodingART2210Fall2019Section2/Duval_John_ART2210/raw/master/Duval_John_ART2210_Self-Portrait_Fall2019/vangogh.jpg)
+![](https://github.com/jduval7/Duval_John_ART2210/raw/master/Image/vangogh.jpg)
