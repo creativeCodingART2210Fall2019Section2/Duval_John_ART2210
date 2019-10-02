@@ -12,8 +12,8 @@ let sec = second();
 let milli = millis();
 let x = 0.0;
 
-let r = map(sec,0, 60, 255, 0);
-let g = map(sec, 0, 60, 0, 80);
+let r = map(sec,0, 60, 125, 0);
+let g = map(sec, 0, 60, 35, 80);
 let b = map(sec,0, 60, 0, 155);
 let millicolor = map(milli, 0, 1000, 0, 255);
 
@@ -47,7 +47,7 @@ circle(circWidth, 250, circMass);
 
 stroke(0);
 push();
-fill(0, millicolor, b);
+fill(0, r, b);
 rect(windowWidth/2, minHeight, 180, 180);
 pop();
 circle(windowWidth/2, minHeight, 100);
