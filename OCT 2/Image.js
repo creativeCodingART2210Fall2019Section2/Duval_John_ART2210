@@ -14,7 +14,6 @@ function setup(){
 
 
 function draw(){
-background(150,0,150);
   image(img, 50, 50);
   
 }
