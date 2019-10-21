@@ -12,6 +12,8 @@ let winnerpic;
 let loserpic;
 var goalie;
 var goalieimg = [];
+let opponent2 = [];
+
 
 function preload() {
     field = loadImage('soccerfield.jpg');
@@ -19,6 +21,7 @@ function preload() {
     goal = loadImage('goal.png');
     winnerpic = loadImage('winner.jpg');
     loserpic = loadImage('loser.jpg');
+    
     for(let i = 0; i < 6; i++){
         peleimg[i] = loadImage('player/run' + i + '.png');
     }
@@ -29,6 +32,10 @@ function preload() {
 
     for(let j = 0; j < 9; j++){
         opponent[j] = loadImage('opponent/op' + j + '.png');
+    }
+
+    for(let l = 0; l < 9; l++){
+        opponent2[l] = loadImage('opponent2/op' + l + '.png');
     }
 }
 
@@ -56,6 +63,12 @@ function setup() {
         goalie.show();
         goalie.move(); 
         
+        fill(255,100,100);
+        let millisecond = floor(millis()/10);
+        text('If Timer \nreaches 4000: \nGame Over! \n' + millisecond, 250, 30);
+        if (millisecond > 4000) {
+            loser();
+        }
 
         blockBoard();
         scoreBoard();
@@ -91,7 +104,7 @@ function setup() {
             } else if(players[i].y < 50) {
                 players[i].ydir = random(5,7);
             } else if(players[i].x < 50) {
-                players[i].xdir = random(5,7); 
+                players[i].xdir = random(5,7);
             }
         }
 
@@ -154,7 +167,7 @@ function blockBoard() {
 }
 
 function gameOver() {
-    var d = dist(players.x, players.y, pele.x, pele.y);
+    
     if(score > 100) {
         winner();
     } if(blocks > 5) {
@@ -180,6 +193,3 @@ function loser() {
     text('You got Pwned!!!', windowWidth/5, windowHeight/3);
 }
 
-
-  
-        
