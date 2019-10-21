@@ -75,10 +75,12 @@ function Players(x, y) {
         this.y = this.y + this.ydir;
     }
 
-    this.show = function() {
-        image(opponent[frameCount % peleimg.length], this.x, this.y);
-    }
 
+    this.show = function() {
+
+    image(opponent[frameCount % peleimg.length], this.x, this.y);
+  
+}
 }
 
 
