@@ -1,0 +1,30 @@
+{
+
+    "people": [
+
+  {
+    "name": [ {"name1":"j",
+                "name2":"k"}
+                ],
+    "red": 255,
+    "green": 0,
+    "blue": 0
+  },
+
+  {
+    "name": "Bob",
+    "red": 0,
+    "green": 250,
+    "blue": 0
+  },
+
+  {
+    "name": "Phil",
+    "red": 0,
+    "green": 0,
+    "blue": 255
+  }
+    ]
+
+
+}
