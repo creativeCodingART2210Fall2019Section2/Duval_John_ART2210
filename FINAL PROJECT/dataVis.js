@@ -26,7 +26,7 @@ var color13 = '#5D5D5D';
 var back = "#010E66";
 
 //api for weather
-var api = 'https://api.openweathermap.org/data/2.5/weather?q=';
+var api = 'http://api.openweathermap.org/data/2.5/weather?q=';
 // var city = 'London';
 var apiKey = '&APPID=e39658b1f780e25ff401c222b89fac87';
 var units = '&units=imperial'; //metric or imperial
