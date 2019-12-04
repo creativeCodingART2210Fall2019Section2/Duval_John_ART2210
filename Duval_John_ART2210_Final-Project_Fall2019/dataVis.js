@@ -1,6 +1,6 @@
 let plane;
 let plane2;
-var planeX = 1200;
+var planeX = 1170;
 var planeY = 730;
 var pWidth = 250;
 var pHeight = 250;
