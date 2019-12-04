@@ -1,7 +1,7 @@
 let plane;
 let plane2;
-var planeX = 1200;
-var planeY = 730;
+var planeX = 1170;
+var planeY = 700;
 var pWidth = 250;
 var pHeight = 250;
 var plane2X = -150;
